@@ -1,0 +1,106 @@
+/* 
+  PC: >= 1024px
+  Tablet: >= 740px and < 1024px
+  Mobile: < 740px
+*/
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  /* Fix bên css content-section padding left-right */
+  .contact-right .form-control{
+    padding: 15px;
+  }
+
+  .contact-right .form-submit-btn{
+    padding: 12px 25px;
+  }
+
+  #footer .social-list{
+    font-size: 48px;
+    margin: 0 8px;
+  }
+
+  #footer .copyright a {
+    padding: 13px 0;
+    display: inline-block;
+  }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+  .s-full-width{
+    width: 100%;
+  }
+
+  #content .s-col-full{
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  #header {
+    overflow: hidden;
+  }
+
+  /* Ẩn icon search */
+  #header .search-btn {
+    display: none;
+  }
+
+  #header .mobile-menu-btn{
+    display: block;
+  }
+
+  /* Để ấn vào cả khối đều nhận */
+  #nav{
+    display: block;
+  }
+
+  #nav > li {
+    display: block;
+  }
+
+  #nav > li a{
+    padding: 1px 24px;
+  }
+  /* Fix lỗi con đầu tiên inline-block */
+  #nav > li:first-child{
+    display: inline-block;
+  }
+
+  #nav .subnav {
+    position: initial;
+    background-color: #333;
+  }
+
+  #nav .subnav a{
+    color: #ccc;
+    padding: 5px 41px;
+  }
+
+  #content .member-name{
+    margin-top: 15px;
+  }
+
+  #content .member-img{
+    width: 60%;
+  }
+
+  #footer .social-list{
+    font-size: 38px;
+    margin: 0 8px;
+  }
+
+  #footer .copyright a {
+    padding: 13px 0;
+    display: inline-block;
+  }
+
+  .contact-right .form-submit-btn{
+    padding: 15px 15px;
+    font-size: 20px;
+  }
+}
